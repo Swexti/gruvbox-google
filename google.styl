@@ -1,0 +1,196 @@
+/* ==UserStyle==
+@name           google.com - 10/13/2020, 4:30:54 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document domain("google.com") {
+    :root {
+        --bg1: #1d2021;
+        --bg2: #282828;
+        --bg3: #504945;
+        --bg4: #202020;
+        --fg1: #ebdbb2;
+        --fg2: #d5c4a1;
+        --fg3: #a89984;
+        --col_blue: #83a598;
+    }
+    body {
+        background-color: var(--bg2) !important;
+    }
+    .RNNXgb /*The search bar*/ {
+        background-color: var(--bg4) !important;
+        border-radius: 3px;
+        border: 0px;
+        box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+        transition: box-shadow 0.1s ease-in-out;
+        
+    }
+    .RNNXgb:hover, .sbfc .RNNXgb /*Add shadow when hovering over the search bar*/{
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.3) !important;
+        border: 0px;
+    }
+    .aajZCb /*Search autocomplete*/ {
+        background-color: var(--bg4);
+        margin-top: 15px;
+        border: 0px;
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    }
+    .sbl1p /*Color of things you've searched before*/ {
+        color: var(--fg1);
+    }
+    .sbct:hover {
+        background-color: var(--bg2);
+    }
+    .sbl1 /*Color of autosuggested searches*/{
+        color: var(--fg1);
+    }
+    .sbl2 /*Color of undertitle in autosuggested searches*/ {
+        color: var(--fg2);
+    }
+    .emcav .RNNXgb /*Remove the border of the bar when searching*/{
+        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.3) !important;
+        border: 0px;
+    }
+    .xtSCL /*Remove a small line ontop of the search autocomplete*/{
+        border: 0px;
+    }
+    .gLFyf /*The fg-color of the search bar*/{
+        color: var(--fg1);
+    }
+    .sfbg /*Header*/ {
+        background-color: var(--bg2) !important;
+    }
+    #hdtbSum /*Nav-bar*/ {
+        background-color: var(--bg2) !important;
+    }
+    #hdtb /*Line under Nav-Bar*/ {
+        border-bottom: 0px; /*Remove the line*/
+    }
+    #appbar /*The thing that says how many results there was*/{
+        background-color: var(--bg2) !important;
+    }
+    .LHJvCe /*The color of the thing that says how many results there was*/{
+        color: var(--fg3);
+    }
+    .IsZvec /*The text under the reslut*/ {
+        color: var(--fg2);
+    }
+    .aCOpRe em /*Color of the bold text under the results*/{
+        color: var(--fg2);
+    }
+    #hdtb-msb .hdtb-mitem.hdtb-msel /*Selected item in Nav-bar*/ {
+        color: var(--fg1) !important;
+        border-bottom: 3px solid var(--fg1) !important;
+    }
+    svg /*Make the svg's match the gruvbox theme*/{
+        filter: sepia(70%);
+    }
+    .hdtb-mitem a /*Non selected items in Nav-Bar*/{
+        color: var(--fg2);
+    }
+    .q:active, .q:visited /*When you click a non selected item*/{
+        color: var(--bg2) !important;
+    }
+    .yuRUbf a /*Color of results*/ {
+        color: var(--fg1);
+    }
+    .iUh30 /*Color of the thing above the result*/{
+        color: var(--fg3);
+    }
+    .eipWBe /*Same as above*/ {
+        color: var(--fg3);
+    }
+    .St3GK a /*Color of links under the search. Not all searches have this.*/{
+        color: var(--col_blue);
+    }
+    .action-menu-panel /*The little menu next to some results*/ {
+        background-color: var(--bg2);
+    }
+    #rcnt .action-menu-item a.fl, .action-menu-item a.fl /*Color of the little menu*/{
+        color: var(--fg2);
+    }
+    .GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover /*color of the button to the little menu*/ {
+        background-color: var(--bg1);
+    }
+    .cv2VAd /*remove border for videos*/ {
+        border: 0px;
+    }
+    g-inner-card /*Color for videos*/{
+        background-color: var(--bg1);
+    }
+    g-inner-card a {
+        color: var(--fg1);
+    }
+    .rhscol .I6TXqe /*Side info of results*/{
+        border: 1px solid var(--bg3);
+        color: var(--fg1);
+    }
+    .hb8SAc /*text from side info*/{
+        color: var(--fg2);
+    }
+    .rsir2d /*Share button in side info*/{
+        color: var(--fg2);
+    }
+    .kno-ecr-pt /*More color for side bar*/{
+        color: var(--fg2);
+    }
+    .w8qArf .fl /*the list on the side bar*/{
+        color: var(--fg2) !important;
+    }
+    a.fl:link, .fl a, .gl a:link /*links from the list on the sidebar*/{
+        color: var(--col_blue);
+    }
+    .kp-blk /*The People also ask*/ {
+        background-color: var(--bg1);
+        border: 1px solid var(--bg1);
+        color: var(--fg2);
+    }
+    .JolIg /*Title color for "People also ask"*/ {
+        color: var(--fg2);
+    }
+    .cbphWd /*border color for "People also ask"*/{
+        border-top: 1px solid var(--bg3);
+    }
+    .MXl0lf /*Button under videos that say "View all"*/ {
+        background-color: var(--bg1);
+        border: 1px solid var(--fg3);
+    }
+    .wUrVib /*more "view all" things*/ {
+        color: var(--fg2);
+    }
+    .pb5vrc /*Line next to "view all"*/ {
+        background-color: var(--fg3);
+    }
+    .kp-blk /*shit under the side bar*/{
+        background-color: var(--bg2);
+        color: var(--fg2) !important;
+    }
+    #rhs .kp-blk {
+        border: 1px solid var(--fg3);
+    }
+    .garHBe {
+        color: var(--fg2);
+    }
+    .xXEKkb {
+        color: var(--fg2) !important;
+    }
+    .cwUqwd {
+        color: var(--fg2);
+    }
+    .y8Jpof:hover {
+        background-color: var(--bg1);
+    }
+    .MXl0lf:hover /*"view all" hover*/{
+        background-color: var(--bg2);
+    }
+    .f6F9Be /*footer*/{
+        background-color: var(--bg1);
+        border-top: 1px solid var(--bg3);
+    }
+    .b2hzT /*footer*/{
+        border-bottom: 1px solid var(--bg3); 
+    }
+}  
